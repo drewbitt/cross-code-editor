@@ -48,6 +48,7 @@ export const styles = {
     boxSizing: "border-box",
     padding: "0",
     overflow: "hidden",
+    height: "300px",
   },
   textarea: {
     position: "absolute",

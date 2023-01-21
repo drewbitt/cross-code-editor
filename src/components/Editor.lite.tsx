@@ -1,9 +1,17 @@
 import { useRef, useState } from "@builder.io/mitosis";
-import { className, cssText, preClassName, Props, styles } from "./Editor.model";
+import {
+  className,
+  cssText,
+  preClassName,
+  Props,
+  styles,
+} from "./Editor.model";
 
 export default function Editor(props: Props) {
   let input = useRef<HTMLTextAreaElement>(null);
-  let [highlighted, setHighlighted] = useState(props.highlight(input.value || ""));
+  let [highlighted, setHighlighted] = useState(
+    props.highlight(input.value || "")
+  );
 
   return (
     <div style={{ ...styles.container }}>
