@@ -1,0 +1,24 @@
+{
+  "name": "cross-code-editor",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "mitosis build",
+    "lint": "eslint"
+  },
+  "exports": {
+    "./svelte/*": "./dist/svelte/src/*"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@builder.io/eslint-plugin-mitosis": "^0.0.14",
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
+    "@typescript-eslint/parser": "^5.48.2",
+    "eslint": "^8.32.0",
+    "prettier": "^2.8.3",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@builder.io/mitosis": "^0.0.84",
+    "@builder.io/mitosis-cli": "^0.0.42"
+  }
+}
